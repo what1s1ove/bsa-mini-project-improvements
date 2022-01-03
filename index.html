@@ -1,210 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
-    <style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
+  <title>Shower Presentation Engine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+  <style>
+    .shower {
+      --slide-ratio: calc(16 / 9);
+    }
+
+    .slide--bsa {
+      background-image: url(./pictures/binary-studio-logo.svg), url(./pictures/binary-studio-academy-logo.svg);
+      background-repeat: no-repeat;
+      background-position: right 20px bottom 25px, left 20px bottom 15px;
+      background-size: 75px, 50px;
+    }
+
+    .bottom-link {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+      }
+  </style>
 </head>
 <body class="shower list">
 
-    <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
-    </header>
+  <header class="caption">
+    <h1>Binary Studio Academy — Mini Project Reborn</h1>
+  </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
+  <section class="slide" id="cover">
+    <h2 class="cover__title">Binary Studio Academy</h2>
+    <h3 class="cover__subtitle">Mini Project Reborn</h3>
+    <p class="cover__desc">🟧 ⬛️</p>
+    <p class="copyright right">
+      <a href="https://whatislove.dev/" target="_blank" rel="noreferrer">© Vladyslav Zubko</a>
+    </p>
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
+    <style>
+      #cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </section>
 
-            #cover p a {
-                color: white;
-            }
-        </style>
-    </section>
+  <section class="slide slide--bsa" id="disclaimer">
+    <h2 class="disclaimer__title">⚠️ Disclaimer</h2>
+    <p class="disclaimer__title next">
+      All characters in this story are fictional and have no resemblance to real people. All similarities are accidental <span class="next"><img src="https://cdn.betterttv.net/emote/58a57fa706e70d0465b29cd3/3x" width="30" alt=""></span>
+    </p>
+  </section>
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
+  <section class="slide slide--bsa" id="meet">
+    <h2 class="meet__title">Meet 🤝</h2>
+    <ul class="meet__list next">
+      <li class="meet__item">
+        <b class="meet__title">~01.2021, 📞 Sasha Kovalov</b>
+        <ul class="meet__item__list next">
+          <li class="meet__item__item">– Hey, will you be a coach? 🤔</li>
+          <li class="meet__item__item next">– Ofc!</li>
+        </ul>
+      </li>
+      <li class="meet__item next">...</li>
+      <li class="meet__item next">
+        <b class="meet__title">~02.2021, 📞 Eduard Dolynskyi</b>
+        <ul class="meet__item__list next">
+          <li class="meet__item__item">– Hey, can you help with a mini-project? 🤔</li>
+          <li class="meet__item__item next">– Ofc!</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
+  <section class="slide slide--bsa" id="clarification">
+    <h2 class="clarification__title">🆑arification</h2>
+    <ul class="clarification__list next">
+      <b class="clarification__title">~02.2021, 📞 Eduard Dolynskyi</b>
+      <ul class="clarification__list next">
+        <li class="clarification__item">
+          – Ed, what's the mini project? 🥲
+        </li>
+        <li class="clarification__item next">
+          – This is a task <span class="next">where the student should work with a <b>modern project</b>. <span class="next">The student must finish it <span class="next">, and they must have the atmosphere of a <b>team real project</b>.</span></span></span>
+        </li>
+        <li class="clarification__item next">
+          Gotcha 🌶
+        </li>
+      </ul>
+    </ul>
+  </section>
 
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
+  <section class="slide slide--bsa" id="algorithm-now">
+    <h2 class="algorithm-now__title">Algorithm For Now 📝</h2>
+    <ul class="algorithm-now__list next">
+      <li class="algorithm-now__item">Student <b>copies</b> the project</li>
+      <li class="algorithm-now__item next">Student takes and does tasks from trello</li>
+      <li class="algorithm-now__item next">Student <b>send the full repository</b> for checking</li>
+      <li class="algorithm-now__item next">Reviewer checks <b>the full repository</b></li>
+      <li class="algorithm-now__item next ">Reviewer gives <b>feedback in the LMS interface</b></li>
+    </ul>
+  </section>
 
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
+  <section class="slide slide--bsa" id="trello-old">
+    <img class="trello-old__img cover" src="pictures/trello.png" alt="Trello">
 
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
+    <style>
+      #trello-old .trello-old__img {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    </style>
+  </section>
 
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
+  <section class="slide slide--bsa" id="tests">
+    <h2 class="tests__title">Tests 🧪</h2>
+    <ul class="tests__list next">
+      <li class="tests__item">
+        <b class="tests__title">~06.2021, 📞 Eduard Dolynskyi</b>
+        <ul class="tests__list next">
+          <li class="tests__item">– We have more and more students. We need tests.</li>
+          <li class="tests__item next">– But I'm not sure what is the best way to do it 🤔 Any ideas?</li>
+          <li class="tests__item next">– Check React homework for example</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="tests__desc next"><b>React Homework: </b> <i class="next">Create an element with a specific class<span class="next">, create a function with a specific name <span class="next">and blablabla...</span></span></i></p>
+  </section>
 
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
+  <section class="slide slide--bsa" id="stats">
+    <h2 class="stats__title">Stats 📊</h2>
+    <ul class="stats__list next">
+      <li class="stats__item">Do <b>40%</b></li>
+      <li class="stats__item next">Do two easy tasks <b>33%</b></li>
+      <li class="stats__item next">Do almost all tasks <b>33%</b></li>
+    </ul>
+    <p class="next"><b>Why:</b> <span class="next">slojna 😤</span></p>
+  </section>
 
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
-    </section>
+  <section class="slide slide--bsa" id="thinking">
+    <h2 class="thinking__title next">🤔 Thinking...</h2>
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
+    <style>
+      #thinking .thinking__title {
+        margin-top: 190px;
+      }
+    </style>
+  </section>
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
+  <section class="slide slide--bsa" id="proposal">
+    <h2 class="propscal__title">Proposal 💡</h2>
+    <p class="proposal__desc next">Allow students to <b>fork</b> a repository on github. <span class="next"><b>Tests</b> will be in the repository <b>right away</b>. <span class="next">Student has <b>tips</b> (screenshot) from the <i>teamlead*</i> for each task. <span class="next">Student creates a <b>pull request</b> to get <b>feedback</b></span></span></span></p>
+  </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+  <section class="slide slide--bsa" id="trello-new">
+    <img class="trello-new__img cover" src="./pictures/trello.png" alt="Trello">
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
-    </section>
+    <style>
+      #trello-new .trello-new__img {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    </style>
+  </section>
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
+  <section class="slide slide--bsa" id="trello-task">
+    <img class="trello-task__img cover" src="./pictures/trello-task.png" alt="Trello task">
 
-    <div class="progress"></div>
+    <style>
+      #trello-task .trello-task__img {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    </style>
+  </section>
 
-    <script src="shower/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+  <section class="slide slide--bsa" id="message">
+    <h2 class="message__title">Teamlead's Message 🧑‍🤝‍🧑</h2>
+    <ul class="message__list">
+      <li class="message__item next">🧑‍🎓 Hey, already spent several hours solving this problem. I just can't think of how to solve it beautifully. Can you please guide me?</li>
+      <li class="message__item next">
+        🧑‍🔧 Hey <s>sweet</s>. We already have the <code>is_liked</code> column in the database. It seems to me that this is bad practice, since for each state you need to create a new column. Let's have only one column <code>like_status</code> of type <code>enum</code>, where we will store the current status.
+        <span class="next">Then everything is simple. You need an <code>async</code> action named <code>toggleLikeStatus</code> on the frontend. <span class="next">Which will send a <code>POST</code> request to <code>/change-status</code> with the current status (one of the enum value). <span class="next">Which will be processed by the <code>changeStatus</code> method from the post-service.</span></span></span>
+      </li>
+      <li class="message__item next">
+        Got it. Thanks 😽
+      </li>
+    </ul>
+    <p class="message__desc next">
+      Acceptance criteria:<br>
+      <b>Frontend:</b> Async Action toggleLikeStatus, like button state depends on status<br>
+      <b>Backend:</b> <code>/change-status</code> controller implementation, <code>changeStatus</code> fro the post-service implementation
+    </p>
+
+    <style>
+      #message .message__list {
+        font-size: 16px;
+      }
+
+      #message .message__desc {
+        font-size: 16px;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="result">
+    <h2 class="result__title">Result 🕊</h2>
+    <ul class="result__list next">
+      <li class="result__item">Student <b>forks</b> the project</li>
+      <li class="result__item next">Student takes and does tasks from trello</li>
+      <li class="result__item next">Student <b>creates the pull request only with changed files</b> for checking</li>
+      <li class="result__item next">Reviewer checks <b>only changed files</b></li>
+      <li class="result__item next">Reviewer gives <b>feedback in GitHub PR interface (as on real projects)</b></li>
+    </ul>
+  </section>
+
+  <section class="slide slide--bsa" id="thanks">
+    <h2>Thanks 🍉</h2>
+    <style>
+      #thanks {
+        display: grid;
+        place-content: center;
+      }
+    </style>
+  </section>
+
+  <footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </footer>
+
+  <div class="progress"></div>
+
+  <script src="shower/shower.js"></script>
+  <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 
 </body>
 </html>
